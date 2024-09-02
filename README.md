@@ -20,3 +20,4 @@ To open in VSCode (ensure you have VSCode CLI installed):
 
 To open in zed (ensure you have Zed CLI installed):
 `zed .`
+ 
