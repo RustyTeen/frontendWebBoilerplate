@@ -1,4 +1,4 @@
-# A Basic HTML, CSS and JS template
+# A Basic HTML, CSS and JS boilerplate
 
 Free to use for any purpose
 
