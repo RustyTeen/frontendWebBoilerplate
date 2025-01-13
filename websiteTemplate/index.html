@@ -3,12 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles.css">
     <title>Document</title>
 </head>
 <body>
+    <header>
+        <nav>
+            <h1>Umang's Portfolio</h1>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    
+    <section id="hero">
+        <h2>Hi, I'm Umang</h2>
+        <p>Creative Web Developer & Designer</p>
+        <a href="#portfolio" class="button">Explore My Work</a>
+    </section>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>I specialize in creating beautiful, functional websites that provide great user experiences. My skills include HTML, CSS, JavaScript, and more.</p>
+    </section>
+
+    <section id="portfolio">
+        <h2>Portfolio</h2>
+        <div class="portfolio-item">
+            <img src="https://via.placeholder.com/300x200" alt="Project 1">
+            <h3>Project Title 1</h3>
+            <p>A brief description of this project and its impact.</p>
+        </div>
+        <div class="portfolio-item">
+            <img src="https://via.placeholder.com/300x200" alt="Project 2">
+            <h3>Project Title 2</h3>
+            <p>A brief description of this project and its technologies.</p>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form id="contactForm">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>© 2025 Umang. All rights reserved.</p>
+    </footer>
+
     <script src="script.js"></script>
 </body>
 </html>
