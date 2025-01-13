@@ -3,59 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Development Portfolio</title>
     <link rel="stylesheet" href="styles.css">
-    <title>Document</title>
 </head>
 <body>
     <header>
         <nav>
-            <h1>Umang's Portfolio</h1>
-            <ul>
+            <h2 class="logo">Creative Web Solutions</h2>
+            <ul class="nav-links">
                 <li><a href="#about">About</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
+            <button id="toggleTheme">Dark Mode</button>
         </nav>
     </header>
 
-    <section id="hero">
-        <h2>Hi, I'm Umang</h2>
-        <p>Creative Web Developer & Designer</p>
-        <a href="#portfolio" class="button">Explore My Work</a>
+    <section id="hero" class="fade-in">
+        <h2>Crafting Modern Web Experiences</h2>
+        <p>Innovative designs & seamless user interactions</p>
+        <a href="#about" class="button">Learn More</a>
     </section>
 
-    <section id="about">
-        <h2>About Me</h2>
-        <p>I specialize in creating beautiful, functional websites that provide great user experiences. My skills include HTML, CSS, JavaScript, and more.</p>
+    <section id="about" class="fade-in">
+        <h2>About This Portfolio</h2>
+        <p>Showcasing dynamic web development projects built with a passion for clean design, cutting-edge functionality, and user-centric experiences.</p>
     </section>
 
-    <section id="portfolio">
-        <h2>Portfolio</h2>
-        <div class="portfolio-item">
-            <img src="https://via.placeholder.com/300x200" alt="Project 1">
-            <h3>Project Title 1</h3>
-            <p>A brief description of this project and its impact.</p>
-        </div>
-        <div class="portfolio-item">
-            <img src="https://via.placeholder.com/300x200" alt="Project 2">
-            <h3>Project Title 2</h3>
-            <p>A brief description of this project and its technologies.</p>
-        </div>
+    <section id="contact" class="fade-in">
+        <h2>Get in Touch</h2
+        <p>Email us at:</p>
+        <button class="email-btn"><a href="mailto:contact@websolutionsdemo.com?subject=Hello!">Open Email</a></button>
     </section>
-
-    <section id="contact">
-        <h2>Contact Me</h2>
-        <form id="contactForm">
-            <input type="text" placeholder="Your Name" required>
-            <input type="email" placeholder="Your Email" required>
-            <textarea placeholder="Your Message" required></textarea>
-            <button type="submit">Send Message</button>
-        </form>
-    </section>
-
-    <footer>
-        <p>© 2025 Umang. All rights reserved.</p>
-    </footer>
 
     <script src="script.js"></script>
 </body>
