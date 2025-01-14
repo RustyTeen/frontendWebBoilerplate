@@ -1,10 +1,10 @@
 :root {
-    --bg-light: #F3F4F6;
-    --text-dark: #1E293B;
-    --accent-color: #06B6D4;
-    --bg-dark: #0F172A;
-    --text-light: #E2E8F0;
-    --accent-dark: #3B82F6;
+    --bg-light: #EDF4C2; /* Light greenish tone */
+    --text-dark: #EB5A3C; /* Bright reddish-orange */
+    --accent-color: #DF9755; /* Soft orange */
+    --bg-dark: #E7D283; /* Yellowish shade for dark mode background */
+    --text-light: #EDF4C2; /* Matching the light background for text */
+    --accent-dark: #EB5A3C; /* Strong reddish-orange for dark mode accents */
 }
 
 @font-face {
@@ -23,7 +23,6 @@ body {
     transition: background 0.5s, color 0.5s;
     font-size: 22px;
     letter-spacing: 2px;
-    background: var(--accent-color);
 }
 
 header {
@@ -36,7 +35,6 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    
 }
 
 nav ul {
@@ -58,26 +56,24 @@ nav a {
     color: var(--bg-light);
     cursor: pointer;
     border-radius: 20px;
-    margin: 10px ;
+    margin: 10px;
     flex: 0 0 auto;
 }
 
-.nav-links{
+.nav-links {
     margin: 10px;
     flex: 1;
-
 }
 
-.logo{
+.logo {
     flex: 0 0 auto;
 }
 
 #hero {
     text-align: center;
     padding: 6rem 2rem;
-    background: linear-gradient(135deg, var(--accent-color), #06B6D4);
+    background: linear-gradient(135deg, var(--accent-color), #DF9755);
     color: white;
-    
 }
 
 .fade-in {
@@ -109,13 +105,13 @@ nav a {
     color: white;
 }
 
-#about{
+#about {
     padding: 4rem 2rem;
     margin: 2rem auto;
     border-radius: 12px;
     max-width: 1100px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
-    color: var(--text-light);
+    color: var(--text-dark);
 }
 
 footer {
@@ -175,6 +171,7 @@ footer {
 #toggleTheme:hover, .email-btn:hover, #hero .button:hover {
     transform: scale(1.05);
 }
+
 #product-showcase {
     padding: 4rem 2rem;
     text-align: center;
@@ -220,7 +217,7 @@ footer {
 }
 
 .product:hover img {
-    transform: scale(1.1);
+    transform: scale(1.05);
 }
 
 .carousel {
@@ -230,21 +227,6 @@ footer {
     position: relative;
     width: 100%;
     overflow: hidden;
-}
-
-.product-container {
-    display: flex;
-    transition: transform 0.5s ease-in-out;
-    gap: 2rem;
-    justify-content: center;
-}
-
-.product {
-    position: relative;
-    width: 280px;
-    text-align: center;
-    transform-origin: center;
-    transition: transform 0.6s ease, opacity 0.6s ease;
 }
 
 .carousel-btn {
@@ -268,12 +250,6 @@ footer {
     right: 1rem;
 }
 
-.product img {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-}
-
 .active {
     transform: scale(1.1) translateX(0) rotate(0deg);
     opacity: 1;
@@ -291,6 +267,7 @@ footer {
     opacity: 0.8;
     z-index: 4;
 }
+
 #flip-showcase {
     padding: 4rem 2rem;
     text-align: center;
