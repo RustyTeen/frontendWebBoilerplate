@@ -7,8 +7,13 @@
     --accent-dark: #3B82F6;
 }
 
+@font-face {
+    font-family: 'book-font';
+    src: url('media/bonk-font/Bonk-DLa0.ttf') format('truetype');
+}
+
 body {
-    font-family: 'Helvetica Neue', Arial, sans-serif;
+    font-family: 'book-font', Helvetica, Arial, sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -16,6 +21,9 @@ body {
     background: var(--bg-light);
     line-height: 1.8;
     transition: background 0.5s, color 0.5s;
+    font-size: 22px;
+    letter-spacing: 2px;
+    background: rgba(52, 52, 52, 0.844);
 }
 
 header {
@@ -28,6 +36,7 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    
 }
 
 nav ul {
@@ -68,6 +77,7 @@ nav a {
     padding: 6rem 2rem;
     background: linear-gradient(135deg, var(--accent-color), #06B6D4);
     color: white;
+    
 }
 
 .fade-in {
@@ -99,12 +109,13 @@ nav a {
     color: white;
 }
 
-#about, #contact {
+#about{
     padding: 4rem 2rem;
     margin: 2rem auto;
     border-radius: 12px;
     max-width: 1100px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    color: var(--text-light);
 }
 
 footer {
@@ -143,6 +154,9 @@ footer {
     color: white;
     border-radius: 5px;
     cursor: pointer;
+    font-family: 'book-font', Helvetica, Arial, sans-serif;
+    letter-spacing: 2px;
+    font-size: 18px;
 }
 
 .email-btn a {
@@ -152,4 +166,12 @@ footer {
 
 .email-btn:hover {
     background: var(--accent-dark);
+}
+
+#toggleTheme, .email-btn, #hero .button {
+    transition: background 0.3s, transform 0.3s;
+}
+
+#toggleTheme:hover, .email-btn:hover, #hero .button:hover {
+    transform: scale(1.05);
 }
