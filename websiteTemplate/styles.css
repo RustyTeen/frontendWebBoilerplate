@@ -1,10 +1,10 @@
 :root {
-    --bg-light: #EDF4C2; /* Light greenish tone */
-    --text-dark: #EB5A3C; /* Bright reddish-orange */
-    --accent-color: #DF9755; /* Soft orange */
-    --bg-dark: #E7D283; /* Yellowish shade for dark mode background */
-    --text-light: #EDF4C2; /* Matching the light background for text */
-    --accent-dark: #EB5A3C; /* Strong reddish-orange for dark mode accents */
+    --bg-light: #4caec9; /* Light pastel pinkish tone */
+    --text-dark: #146C94; /* Bright reddish-orange */
+    --accent-color: #6bd3ff; /* Soft pastel blue */
+    --bg-dark: #146C94; /* Deep ocean blue for dark mode background */
+    --text-light: #F6F1F1; /* Light pastel pinkish tone for text */
+    --accent-dark: #4caec9; /* Bright cyan for dark mode accents */
 }
 
 @font-face {
@@ -72,7 +72,7 @@ nav a {
 #hero {
     text-align: center;
     padding: 6rem 2rem;
-    background: linear-gradient(135deg, var(--accent-color), #DF9755);
+    background: var(--accent-color);
     color: white;
 }
 

@@ -3,61 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <title>Professional Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <h1>Homemade Jalebis</h1>
-        <nav>
-            <a href="#about">About Us</a>
-            <a href="#products">Our Jalebis</a>
-            <a href="#contact">Contact</a>
-        </nav>
+    <header class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">Crafting Digital Experiences</h1>
+            <p class="hero-subtitle">Web Developer | Designer | Innovator</p>
+            <a href="#projects" class="cta">Discover My Work</a>
+        </div>
     </header>
 
-    <section id="hero">
-        <h2>Delicious Homemade Jalebis</h2>
-        <p>Prepared with love by moms. Fresh, crispy, and delightful!</p>
-        <button onclick="scrollToProducts()">Order Now</button>
-    </section>
-
-    <section id="about">
-        <h3>About Us</h3>
-        <p>We are a community of moms passionate about making traditional sweets. Our jalebis are homemade, fresh, and delicious.</p>
-    </section>
-
-    <section id="products">
-        <h3>Our Jalebis</h3>
-        <div class="product-card">
-            <img src="jalebi1.jpg" alt="Jalebi 1">
-            <p>Crispy Jalebis - ₹200/kg</p>
-            <button>Buy Now</button>
+    <section id="projects" class="projects">
+        <h2>Featured Projects</h2>
+        <div class="project-card">
+            <h3>Smart Home Interface</h3>
+            <p>Intuitive dashboard for home automation control.</p>
+            <a href="#" class="link">See More</a>
         </div>
-        <div class="product-card">
-            <img src="jalebi2.jpg" alt="Jalebi 2">
-            <p>Saffron Jalebis - ₹250/kg</p>
-            <button>Buy Now</button>
+        <div class="project-card">
+            <h3>NextGen E-Commerce</h3>
+            <p>A scalable platform with dynamic product pages.</p>
+            <a href="#" class="link">See More</a>
         </div>
     </section>
 
-    <section id="contact">
-        <h3>Contact Us</h3>
-        <form id="contactForm">
-            <label for="name">Name:</label>
-            <input type="text" id="name" required>
-            <label for="email">Email:</label>
-            <input type="email" id="email" required>
-            <label for="message">Message:</label>
-            <textarea id="message" rows="4" required></textarea>
-            <button type="submit">Send</button>
-        </form>
+    <section id="skills" class="skills">
+        <h2>Core Skills</h2>
+        <ul>
+            <li>Frontend Development</li>
+            <li>JavaScript (ES6+), React</li>
+            <li>UI/UX Prototyping</li>
+            <li>Version Control (Git)</li>
+        </ul>
     </section>
 
-    <footer>
-        <p>&copy; 2025 Homemade Jalebis by Moms. All rights reserved.</p>
+    <footer class="contact">
+        <a href="mailto:demo@example.com" class="cta">Contact Me</a>
     </footer>
-
-    <script src="script.js"></script>
 </body>
 </html>
